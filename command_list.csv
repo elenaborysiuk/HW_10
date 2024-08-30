@@ -1,0 +1,26 @@
+    1  git config --global user.name "elenaborysiuk"
+    2  git config --global user.email helenboris99@gmail.com
+    3  git clone https://github.com/elenaborysiuk/HW_10.git
+    4  cd HW_10
+    5  touch text_ignore.txt
+    6  nano .gitignore
+    7  git status
+    8  git add
+    9  git commit -m "Added a new file"
+   10  touch main_test.txt
+   11  git add
+   12  git add .
+   13  git commit -m "Added a new main test file"
+   14  git branch develop
+   15  git checkout develop
+   16  touch develop_test.txt
+   17  git add .
+   18  git commit -m "Added new branch and created test file on this branch"
+   19  nano develop_test.txt
+   20  git status
+   21  git add .
+   22  git commit -m "File develop_test updated"
+   23  git checkout main
+   24  git merge develop
+   25  git log
+   26  history > command_list.csv
